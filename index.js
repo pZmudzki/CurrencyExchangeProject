@@ -64,7 +64,7 @@ app.post("/", async (req, res) => {
       conversionResult: conversionResult,
     });
   } catch (error) {
-    console.log("error");
+    console.log(error.responseSymbols.data);
   }
 });
 
