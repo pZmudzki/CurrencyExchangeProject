@@ -1,6 +1,6 @@
-const themeBtn = document.querySelector(".switch-theme");
-const body = document.querySelector("body");
-
-themeBtn.addEventListener("click", () => {
-  body.classList.toggle("dark-theme");
+$(document).ready(function () {
+  // SWITCH THEME
+  $(".switch-theme").click(() => {
+    $("body").toggleClass("dark-theme");
+  });
 });

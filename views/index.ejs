@@ -22,12 +22,18 @@
         <form class="form" action="/" method="post">
           <div class="form-element">
             <label for="amount">Amount:</label>
-            <input type="number" id="amount" name="amount" />
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              class="input"
+              required
+            />
           </div>
 
           <div class="form-element">
             <label for="from">From:</label>
-            <select name="fromCurrency" id="from">
+            <select name="fromCurrency" id="from" class="input">
               <!-- loop through an object -->
               <% if(locals.result && locals.keys) { keys.forEach((key, index) =>
               {%>
@@ -38,16 +44,9 @@
             </select>
           </div>
 
-          <button type="button" class="swap-currencies-btn">
-            <ion-icon
-              class="swap-currencies-icon"
-              name="swap-vertical-outline"
-            ></ion-icon>
-          </button>
-
           <div class="form-element">
             <label for="to">To:</label>
-            <select name="toCurrency" id="to">
+            <select name="toCurrency" id="to" class="input">
               <!-- loop through an object -->
               <% if(locals.result && locals.keys) { keys.forEach((key, index) =>
               {%>
