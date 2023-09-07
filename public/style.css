@@ -104,9 +104,33 @@ main {
   margin: 0;
 }
 
+.result {
+  font-size: 2.4rem;
+}
+
+.convert-btn {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background-color: #fff;
+  border: none;
+  border-radius: 10rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.61);
+  transition: all 0.3s;
+}
+
+.convert-btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.459);
+}
 /* INPUTS */
 
 .input {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
+  border: none;
   border-radius: 0.8rem;
+}
+
+.input-margin {
+  margin-bottom: 3.6rem;
 }

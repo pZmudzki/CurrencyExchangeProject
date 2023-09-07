@@ -46,7 +46,7 @@
 
           <div class="form-element">
             <label for="to">To:</label>
-            <select name="toCurrency" id="to" class="input">
+            <select name="toCurrency" id="to" class="input input-margin">
               <!-- loop through an object -->
               <% if(locals.result && locals.keys) { keys.forEach((key, index) =>
               {%>
@@ -57,7 +57,7 @@
             </select>
           </div>
 
-          <button type="submit">Convert</button>
+          <button type="submit" class="convert-btn">Convert</button>
         </form>
         <%
         if(locals.conversionRate&&locals.amount&&locals.baseCurr&&locals.conversionResult&&locals.targetCurr){
